@@ -55,7 +55,6 @@ export function InputAutocomplete(props: InputAutocompleteProps) {
                       value={option.label}
                       key={option.value}
                       onSelect={() => {
-                        form.setValue("key950", option.value);
                       }}
                     >
                       <Check
