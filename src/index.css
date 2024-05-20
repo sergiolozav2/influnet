@@ -60,7 +60,7 @@ body {
   }
 
   .dark {
-    --background: 200 5% 10%;
+    /* --background: 200 5% 10%;
     --foreground: 0 0% 98%;
 
     --muted: 240 3.7% 15.9%;
@@ -87,7 +87,31 @@ body {
     --destructive: 0 62.8% 20.6%;
     --destructive-foreground: 0 85.7% 97.3%;
 
-    --ring: 256 22% 80%;
+    --ring: 256 22% 80%; */
+    --admin-navbar-width: 14rem;
+    --module-navbar-width: 13rem;
+    --chat-header-height: 75px;
+
+    --background: 300 100% 99%;
+    --foreground: 240 7% 11%;
+    --card: 243 5% 93%;
+    --card-foreground: 240 7% 11%;
+    --popover: 300 100% 99%;
+    --popover-foreground: 240 7% 11%;
+    --primary: 261 62% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 32 86% 49%;
+    --secondary-foreground: 300 100% 99%;
+    --muted: 256 22% 90%;
+    --muted-foreground: 240 6% 39%;
+    --accent: 243 19% 90%;
+    --accent-foreground: 240 4% 20%;
+    --destructive: 0 75% 40%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 256 22% 84%;
+    --input: 256 22% 70%;
+    --ring: 32 86% 49%;
+    --radius: 0.5rem;
   }
 }
 
