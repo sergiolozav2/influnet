@@ -48,7 +48,7 @@ export function PostsList(props: PostsListProps) {
               <p>{post.descripcion}</p>
               {post.imagen.length !== 0 ? (
                 <img
-                  className="mt-2 max-h-64 max-w-2xl border object-cover"
+                  className="mt-2 max-h-64 w-full max-w-2xl border object-cover"
                   src={post.imagen}
                 />
               ) : null}

@@ -55,7 +55,7 @@ export function EditProfilePage(props: EditProfilePageProps) {
   const [preview, setPreview] = useState<string | null>();
   async function onUpload(file: File) {
     const compressed = await imageCompression(file, {
-      maxSizeMB: 1,
+      maxSizeMB: 0.5,
       maxWidthOrHeight: 512,
     });
 

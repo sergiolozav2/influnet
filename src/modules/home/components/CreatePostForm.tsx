@@ -5,6 +5,7 @@ import { ChangeEvent, useRef, useState } from "react";
 import { FaImage } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
 import { useCreatePost } from "../hooks/useCreatePost";
+import imageCompression from "browser-image-compression";
 
 type CreatePostFormProps = {
   handleSuccess: () => void;
@@ -23,8 +24,11 @@ export function CreatePostForm(props: CreatePostFormProps) {
     if (!file) {
       return;
     }
-
-    const urlBase64 = await fileToBase64(file);
+    const compressed = await imageCompression(file, {
+      maxSizeMB: 0.2,
+      maxWidthOrHeight: 512,
+    });
+    const urlBase64 = await fileToBase64(compressed);
     setPreview(urlBase64);
   }
 
