@@ -1,6 +1,6 @@
-# Mibo - Frontend
+# Influnet - Frontend
 
-Webapp de transporte creado con React y Typescript
+Webapp de red social para influencers hecha con React y Typescript
 
 ## Herramientas principales
 
